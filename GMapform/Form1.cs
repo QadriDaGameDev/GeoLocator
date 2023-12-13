@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GMap.NET;
+using GMap.NET.WindowsForms.Markers;
+using GMap.NET.WindowsForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +63,39 @@ namespace GMapform
         {
             Color customColor = Color.FromArgb(51, 51, 76);
             viewbtn.BackColor = customColor;
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+            //code for showing map on screen//
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerAndCache;
+            gMapControl1.Dock = DockStyle.Fill;
+            gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+            double lat, lon;
+            lat = 24.9795066883323;
+            lon = 67.0655250549316;
+            gMapControl1.Position = new PointLatLng(lat, lon);
+            gMapControl1.Zoom = 17;
+
+            //code for marker//
+
+            GMapOverlay o = new GMapOverlay("o");
+            GMapMarker m = new GMarkerGoogle(new PointLatLng(lat, lon), GMap.NET.WindowsForms.Markers.GMarkerGoogleType.blue_pushpin);
+
+            gMapControl1.Overlays.Add(o);
+            o.Markers.Add(m);
+            gMapControl1.Invalidate();
+            gMapControl1.Update();
+        }
+
+        private void sidebar_Scroll(object sender, ScrollEventArgs e)
+        {
+            gMapControl1.Zoom = sidebar.Value;
+        }
+
+        private void viewbtn_Click(object sender, EventArgs e)
+        {
+            gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleKoreaSatelliteMapProvider.Instance;
         }
     }
 }

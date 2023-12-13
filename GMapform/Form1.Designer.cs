@@ -35,8 +35,8 @@
             this.viewbtn = new System.Windows.Forms.Button();
             this.contactbtn = new System.Windows.Forms.Button();
             this.namebtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.sidebar = new System.Windows.Forms.VScrollBar();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 551);
+            this.panel1.Size = new System.Drawing.Size(226, 487);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -110,6 +110,7 @@
             this.viewbtn.Text = "    Change View";
             this.viewbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.viewbtn.UseVisualStyleBackColor = false;
+            this.viewbtn.Click += new System.EventHandler(this.viewbtn_Click);
             this.viewbtn.MouseLeave += new System.EventHandler(this.viewbtn_MouseLeave);
             this.viewbtn.MouseHover += new System.EventHandler(this.viewbtn_MouseHover);
             // 
@@ -148,29 +149,51 @@
             this.namebtn.MouseLeave += new System.EventHandler(this.namebtn_MouseLeave_1);
             this.namebtn.MouseHover += new System.EventHandler(this.namebtn_MouseHover);
             // 
-            // panel2
+            // gMapControl1
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(226, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(723, 61);
-            this.panel2.TabIndex = 1;
+            this.gMapControl1.Bearing = 0F;
+            this.gMapControl1.CanDragMap = true;
+            this.gMapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gMapControl1.GrayScaleMode = false;
+            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gMapControl1.LevelsKeepInMemory = 5;
+            this.gMapControl1.Location = new System.Drawing.Point(226, 0);
+            this.gMapControl1.MarkersEnabled = true;
+            this.gMapControl1.MaxZoom = 10;
+            this.gMapControl1.MinZoom = 2;
+            this.gMapControl1.MouseWheelZoomEnabled = true;
+            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gMapControl1.Name = "gMapControl1";
+            this.gMapControl1.NegativeMode = false;
+            this.gMapControl1.PolygonsEnabled = true;
+            this.gMapControl1.RetryLoadTile = 0;
+            this.gMapControl1.RoutesEnabled = true;
+            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gMapControl1.ShowTileGridLines = false;
+            this.gMapControl1.Size = new System.Drawing.Size(552, 487);
+            this.gMapControl1.TabIndex = 3;
+            this.gMapControl1.Zoom = 0D;
+            this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
-            // panel3
+            // sidebar
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(226, 485);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(723, 66);
-            this.panel3.TabIndex = 2;
+            this.sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sidebar.Location = new System.Drawing.Point(761, 0);
+            this.sidebar.Name = "sidebar";
+            this.sidebar.Size = new System.Drawing.Size(17, 487);
+            this.sidebar.TabIndex = 4;
+            this.sidebar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.sidebar_Scroll);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 551);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(778, 487);
+            this.Controls.Add(this.sidebar);
+            this.Controls.Add(this.gMapControl1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -191,8 +214,8 @@
         private System.Windows.Forms.Button locationbtn;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label Geolbl;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private System.Windows.Forms.VScrollBar sidebar;
     }
 }
 
