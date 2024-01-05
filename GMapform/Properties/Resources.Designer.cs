@@ -123,6 +123,16 @@ namespace GMapform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_white_globe_png_image_9977343 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-white-globe-png-image_9977343", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rsz_11view_map_location_icon_modified {
             get {
                 object obj = ResourceManager.GetObject("rsz_11view-map-location-icon-modified", resourceCulture);
@@ -173,6 +183,16 @@ namespace GMapform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_1rsz_download_removebg_preview_PhotoRoom_png_PhotoRoom {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1rsz_download-removebg-preview-PhotoRoom.png-PhotoRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rsz_1rsz_location_icon_white_png_10 {
             get {
                 object obj = ResourceManager.GetObject("rsz_1rsz_location-icon-white-png-10", resourceCulture);
@@ -196,6 +216,96 @@ namespace GMapform.Properties {
         internal static System.Drawing.Bitmap rsz_1rsz_location_icon_white_png_102 {
             get {
                 object obj = ResourceManager.GetObject("rsz_1rsz_location-icon-white-png-102", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1rsz_output_onlinepngtools_1 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1rsz_output-onlinepngtools_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1rsz_output_onlinepngtools_11 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1rsz_output-onlinepngtools_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1rsz_output_onlinepngtools_12 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1rsz_output-onlinepngtools_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_3images_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("rsz_3images-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_3images_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_3images-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_3rsz_rsz_1rsz_output_onlinepngtools_1 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_3rsz_rsz_1rsz_output-onlinepngtools_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_3rsz_rsz_1rsz_output_onlinepngtools_11 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_3rsz_rsz_1rsz_output-onlinepngtools_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_3rsz_rsz_1rsz_output_onlinepngtools_12 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_3rsz_rsz_1rsz_output-onlinepngtools_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_3rsz_rsz_1rsz_output_onlinepngtools_13 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_3rsz_rsz_1rsz_output-onlinepngtools_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +346,36 @@ namespace GMapform.Properties {
         internal static System.Drawing.Bitmap rsz_rsz_1rsz_location_icon_white_png_10 {
             get {
                 object obj = ResourceManager.GetObject("rsz_rsz_1rsz_location-icon-white-png-10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_rsz_1rsz_output_onlinepngtools_1 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_rsz_1rsz_output-onlinepngtools_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_rsz_1rsz_output_onlinepngtools_11 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_rsz_1rsz_output-onlinepngtools_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_rsz_3images_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("rsz_rsz_3images-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

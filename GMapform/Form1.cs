@@ -15,6 +15,7 @@ namespace GMapform
 {
     public partial class Form1 : Form
     {
+        private int viewButtonClickCount = 0;
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace GMapform
 
         private void namebtn_MouseLeave_1(object sender, EventArgs e)
         {
-            Color customColor = Color.FromArgb(51, 51, 76);
+            Color customColor = Color.FromArgb(41, 128, 185);
             namebtn.BackColor = customColor;
         }
 
@@ -39,7 +40,7 @@ namespace GMapform
 
         private void contactbtn_MouseLeave(object sender, EventArgs e)
         {
-            Color customColor = Color.FromArgb(51, 51, 76);
+            Color customColor = Color.FromArgb(41, 128, 185);
             contactbtn.BackColor = customColor;
         }
 
@@ -50,7 +51,7 @@ namespace GMapform
 
         private void locationbtn_MouseLeave(object sender, EventArgs e)
         {
-            Color customColor = Color.FromArgb(51, 51, 76);
+            Color customColor = Color.FromArgb(41, 128, 185);
            locationbtn.BackColor = customColor;
         }
 
@@ -61,7 +62,7 @@ namespace GMapform
 
         private void viewbtn_MouseLeave(object sender, EventArgs e)
         {
-            Color customColor = Color.FromArgb(51, 51, 76);
+            Color customColor = Color.FromArgb(41, 128, 185);
             viewbtn.BackColor = customColor;
         }
 
@@ -88,14 +89,37 @@ namespace GMapform
             gMapControl1.Update();
         }
 
-        private void sidebar_Scroll(object sender, ScrollEventArgs e)
-        {
-            gMapControl1.Zoom = sidebar.Value;
-        }
+        
 
         private void viewbtn_Click(object sender, EventArgs e)
         {
-            gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleKoreaSatelliteMapProvider.Instance;
+            // Increment the counter each time the button is clicked
+            viewButtonClickCount++;
+
+            // Check the value of the counter to determine which map view to display
+            if (viewButtonClickCount % 2 == 0)
+            {
+                // If the counter is even, show the default view
+                gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+            }
+            else
+            {
+                // If the counter is odd, show the Korea satellite view
+                gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleSatelliteMapProvider.Instance;
+            }
         }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+           
+            gMapControl1.Zoom = trackbar.Value;
+            if (trackbar.Value == 21)
+            {
+                MessageBox.Show("you can't zoom above this level");                                                                                                          
+                         
+            }                                                        
+        }
+
+          
     }
 }
